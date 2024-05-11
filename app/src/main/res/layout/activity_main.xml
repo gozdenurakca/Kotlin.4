@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="superKahramanYap"
+        android:text="Super kahraman oluştur"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/sonucText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meslekText" />
+
+    <EditText
+        android:id="@+id/isimText"
+        android:layout_width="311dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="Super kahraman isim"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/yasText"
+        app:layout_constraintEnd_toEndOf="@+id/yasText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/yasText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/yasText"
+        android:layout_width="311dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Super kahraman yas"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/meslekText"
+        app:layout_constraintEnd_toEndOf="@+id/meslekText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/meslekText"
+        app:layout_constraintTop_toBottomOf="@+id/isimText" />
+
+    <EditText
+        android:id="@+id/meslekText"
+        android:layout_width="311dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="Super kahraman meslek"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/yasText" />
+
+    <TextView
+        android:id="@+id/sonucText"
+        android:layout_width="312dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="279dp"
+        android:text="İsim : Yaş  : Meslek : "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
